@@ -9,4 +9,4 @@
 - Multiple themes
 
 [Docsify](https://github.com/docsifyjs/docsify/)
-[Headline](/#Headline)
+[Headline](/creating-documents-with-docify/#Headline)

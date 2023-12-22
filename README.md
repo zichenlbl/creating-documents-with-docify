@@ -147,3 +147,10 @@ $age = 30;
 # 文件嵌入
 
 [logo](./logo.mp4 ':include')
+
+# License
+# 许可证
+
+This project is under the [Apache-2.0](LICENSE).
+
+该项目属于 [Apache-2.0](LICENSE)。

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"> -->
+
+  <!-- 界面主题 css 样式切换 -->
+  <!-- vue 主题 -->
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css"> -->
+  <!-- buble 主题 -->
+  <link rel="stylesheet" href="./css/buble.css">
+  <!-- dark 主题 -->
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/dark.css"> -->
+  <!-- pure 主题 -->
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/pure.css"> -->
+  <!-- dolphin 主题 -->
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/dolphin.css"> -->
+
+  <!-- 在 Github 上修改此页 link：https://github.com/njleonzhang/docsify-edit-on-github -->
+  <script src="./js/docsify-edit-on-github.js"></script>
+  
+</head>
+<body>
+  <div id="app">Loading...（根据网络情况若等待时间较长请刷新页面重试！）</div>
+  <script>
+    window.$docsify = {
+
+      // 文档标题，会显示在侧边栏顶部。link：https://docsify.js.org/#/zh-cn/configuration?id=name
+      name: 'Docsify文档创建',
+
+      // 右上角 Github 挂件。link：https://docsify.js.org/#/zh-cn/configuration?id=repo
+      repo: 'https://github.com/docsifyjs/docsify/',
+
+      // 每个页面的侧边栏都加载自定义的 _sidebar.md 文件生成侧边栏。link：https://docsify.js.org/#/zh-cn/configuration?id=loadsidebar
+      loadSidebar: true,
+
+      // 每个页面生成目录的最大层级。Markdown 文件最多可以写6级标题。link：https://docsify.js.org/#/zh-cn/configuration?id=submaxlevel
+      subMaxLevel: 6,
+      
+      // 顶部导航栏加载 _navbar.md 文件。link：https://docsify.js.org/#/zh-cn/configuration?id=loadnavbar
+      loadNavbar: true,
+      
+      // 启用封面页。link：https://docsify.js.org/#/zh-cn/configuration?id=coverpage
+      coverpage: {
+        '/': '_coverpage.md',
+      },
+
+      // 点击文档标题后跳转的链接地址。link：https://docsify.js.org/#/zh-cn/configuration?id=namelink
+      nameLink: {
+        '/': '/?id=docsify文档创建-100',
+      },
+
+      // 路由模式，首页地址栏后面不会出现/#/。link：https://docsify.js.org/#/zh-cn/configuration?id=routermode
+      routerMode: 'history',
+
+      // 根据侧边栏内容自动为每个页面增加标题。link：https://docsify.js.org/#/zh-cn/configuration?id=autoheader
+      autoHeader: true,
+
+      // 小屏设备下合并顶部导航栏到侧边栏。link：https://docsify.js.org/#/zh-cn/configuration?id=mergenavbar
+      mergeNavbar: true,
+
+      // 定位到指定的锚点时，距离页面顶部有一定空间。默认0。link：https://docsify.js.org/#/zh-cn/configuration?id=topmargin
+      topMargin: 15,
+
+      // 全文搜索 - Search。link：https://docsify.js.org/#/zh-cn/plugins?id=%e5%85%a8%e6%96%87%e6%90%9c%e7%b4%a2-search
+      search: {
+
+        // 过期时间，单位毫秒，默认一天。
+        maxAge: 86400000, 
+
+        // 需要搜索的文件列表，或者改为 paths: 'auto' ，使用默认值。
+        paths: [
+          // => /README.md
+          '/',                            
+          // => //如何创建此文档/如何创建此文档.md
+          '/如何创建此文档/如何创建此文档',
+        ], 
+
+        // 未输入时显示的占位文本。
+        placeholder: {
+          '/': '请输入关键词进行搜索！',
+        },
+
+        // 搜索结果为空时显示的提示。
+        noData: {
+          '/': '未搜索到结果，换个关键词试试！',
+        },
+
+        // 搜索标题的最大层级, 1 - 6。
+        depth: 6,
+
+        // 搜索时是否隐藏侧边栏内容。
+        hideOtherSidebarContent: false,
+
+        // 命名空间，避免搜索索引冲突。同一个电脑部署多个 Docsify 网站时，区分每个网站。
+        namespace: 'Docsify文档创建',
+
+        // 使用不同的索引作为路径前缀（namespaces）
+        // 注意：仅适用于 paths: 'auto' 模式
+        //
+        // 初始化索引时，我们从侧边栏查找第一个路径
+        // 如果它与列表中的前缀匹配，我们将切换到相应的索引
+        pathNamespaces: [
+          // URL路径匹配到 "/如何创建此文档"，就使用 "/如何创建此文档" 索引。
+          '/如何创建此文档',
+        ],
+
+      },
+      
+      // 路由别名，指定的路由匹配成功就打开配置的.md文件。link：https://docsify.js.org/#/zh-cn/configuration?id=alias
+      alias: {
+
+        // 访问到 /about 路由打开的页面
+        '/about':
+          'https://raw.githubusercontent.com/zichenlbl/zichenlbl/main/README.md',
+
+        // 为所有的子页面重用根目录下的 _sidebar.md 侧边栏配置文件。
+        '/.*/_sidebar.md': '/_sidebar.md',
+        
+      },
+      
+      // 复制到剪切板，匹配路由后显示中文或英文按钮文字、错误提示、成功提示。link：https://docsify.js.org/#/zh-cn/plugins?id=%e5%a4%8d%e5%88%b6%e5%88%b0%e5%89%aa%e8%b4%b4%e6%9d%bf
+      copyCode: {
+
+        // 中文或英文按钮文字
+        buttonText: {
+          '/': '复制代码',
+          '/en/': 'Copy to clipboard',
+        },
+
+        // 错误提示
+        errorText: {
+          '/': '复制失败',
+          '/en/': 'Error',
+        },
+
+        // 成功提示
+        successText: {
+          '/': '复制成功',
+          '/en/': 'Copied',
+        },
+
+      },
+
+      // 字数统计，统计汉字和单词，排除特殊字符例如*、-等。link：https://docsify.js.org/#/zh-cn/plugins?id=%e5%ad%97%e6%95%b0%e7%bb%9f%e8%ae%a1
+      count:{
+
+        // 配置说明 link：https://github.com/827652549/docsify-count#to-use
+        // 设置字符统计展示与否，true(默认值Default) / false
+        countable: true,
+
+        // 设置展示位置，'top'(默认值Default) / 'bottom'
+        position: 'top',
+
+        // 设置与邻近DOM的距离，'10px'
+        margin: '10px',
+
+        // 设置元素对齐，'right'(默认值Default) / 'top'
+        float: 'right',
+
+        // 设置字体大小，'0.9em'
+        fontsize:'0.9em',
+
+        // 设置颜色，'rgb(90,90,90)'
+        color:'rgb(90,90,90)',
+
+        // 设置语言，'english'(默认值Default) / 'chinese'，chinese 显示：1 字，english显示：1 words
+        language:'chinese',
+
+        // 支持本土化，words: "", minute: ""
+        // 如果 localization 的 words 和 minute 属性值不为空，则会取代 language 的作用。
+        localization: {
+          words: "",
+          minute: ""
+        },
+
+        // 是否显示预计阅读时长，true(默认值Default) / false
+        isExpected: true,
+
+      },
+
+      // Tabs 选项卡。link：https://docsify.js.org/#/zh-cn/plugins?id=tabs https://jhildenbiddle.github.io/docsify-tabs/#/
+      tabs: {
+
+        // 页面刷新后是否恢复选择默认的选项卡。
+        persist: true,
+
+        // 多个选项卡的标签值一样，改变其中一个是否同步其他选项卡。
+        sync: true,
+
+        // 设置选项卡主题：'classic'、'material'、false
+        theme: 'classic',
+
+        // 确定是否可以使用制表符注释来定义制表符集中的制表符，例如：<!-- tabs:start --> <!-- tabs:end --> HTML 注释用于标记选项卡集的开始和结束。
+        tabComments: true,
+
+        // 确定是否可以使用标题 + 粗体 Markdown 定义选项卡集中的选项卡，例如：#### **English**。
+        tabHeadings: true
+      },
+
+      // 底部分页导航。link：https://docsify.js.org/#/zh-cn/plugins?id=pagination
+      pagination: {
+
+        // 前一个标签的文本
+        previousText: '上一章',
+        
+        // 下一个标签的文本。
+        nextText: {
+          '/en/': 'NEXT',
+          '/': '下一章'
+        },
+
+        // 允许导航至上一/下一章。
+        crossChapter: true,
+
+        // 显示章节名称。
+        crossChapterText: true,
+      },
+
+      // disqus 评论，用户 id。link：https://disqus.com/
+      disqus: 'zichenlbl',
+
+      // 支持使用 Vue 语法。link：https://docsify.js.org/#/zh-cn/vue?id=%e5%85%bc%e5%ae%b9-vue
+      vueGlobalOptions: {
+        data() {
+          return {
+            count: 0,
+          };
+        },
+      },
+
+      // 插件
+      plugins: [
+
+        // 在 Github 上修改此页。link：https://github.com/njleonzhang/docsify-edit-on-github
+        EditOnGithubPlugin.create(
+
+          // github 项目文件夹：https://github.com/docsifyjs/docsify/blob/master/docs/
+          'https://github.com/docsifyjs/docsify/blob/master/docs',
+
+          // 编辑你的github页面的链接：默认情况下，这是根据自动设置的docBase
+          'https://github.com/docsifyjs/docsify/blob/master/docs',
+
+          // 编辑按钮的文字：默认值：Edit on github。如果作为函数传递，则可以根据文件路径自定义标题。
+          function(file) {
+            if (file.indexOf('en') === -1) {
+              return '在 Github 上编辑此页'
+            } else {
+              return 'edit on git'
+            }
+          }
+        )
+      ],
+
+    }
+  </script>
+
+  <!-- Docsify v4 --> 
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+
+  <!-- 全文搜索 - Search link：https://docsify.js.org/#/zh-cn/plugins?id=%e5%85%a8%e6%96%87%e6%90%9c%e7%b4%a2-search -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+
+  <!-- 全文搜索时忽略双音符 link：https://docsify.js.org/#/zh-cn/plugins?id=%e5%85%a8%e6%96%87%e6%90%9c%e7%b4%a2-search -->
+  <script src="//polyfill.io/v3/polyfill.min.js?features=String.prototype.normalize"></script>
+
+  <!-- emoji 表情插件 link：https://docsify.js.org/#/zh-cn/plugins?id=emoji -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+
+  <!-- 外链脚本 - External Script 用于执行 src 引用的js link：https://docsify.js.org/#/zh-cn/plugins?id=%e5%a4%96%e9%93%be%e8%84%9a%e6%9c%ac-external-script -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
+
+  <!-- 图片缩放 - Zoom image link：https://docsify.js.org/#/zh-cn/plugins?id=%e5%9b%be%e7%89%87%e7%bc%a9%e6%94%be-zoom-image -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+
+  <!-- 复制到剪切板 link：https://docsify.js.org/#/zh-cn/plugins?id=%e5%a4%8d%e5%88%b6%e5%88%b0%e5%89%aa%e8%b4%b4%e6%9d%bf -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  
+  <!-- 字数统计 link：https://docsify.js.org/#/zh-cn/plugins?id=%e5%ad%97%e6%95%b0%e7%bb%9f%e8%ae%a1 -->
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+
+  <!-- 代码高亮 link：https://docsify.js.org/#/zh-cn/language-highlight?id=%e4%bb%a3%e7%a0%81%e9%ab%98%e4%ba%ae -->
+  <!-- bash 语言代码高亮 -->
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  
+  <!-- php 语言代码高亮 -->
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
+
+  <!-- Tabs 选项卡 link：https://docsify.js.org/#/zh-cn/plugins?id=tabs https://jhildenbiddle.github.io/docsify-tabs/#/ -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+
+  <!-- 底部分页导航 link：https://docsify.js.org/#/zh-cn/plugins?id=pagination -->
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+
+  <!-- disqus 评论 link：https://disqus.com/ -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/disqus.min.js"></script>
+
+  <!-- 支持使用 Vue 语法，Vue3 开发版 link：https://docsify.js.org/#/zh-cn/vue?id=%e5%85%bc%e5%ae%b9-vue -->
+  <script src="//cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
+
+  <!-- 离线模式（PWA）link：https://docsify.js.org/#/zh-cn/pwa -->
+  <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('sw.js')
+    }
+  </script>
+
+</body>
+</html>

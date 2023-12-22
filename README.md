@@ -12,14 +12,6 @@
 
 <img id="zoom-margin" src="https://medium-zoom.francoischalifour.com/image-2.ddbb59d5.jpg" >
 
-<img id="zoom-background" src="https://medium-zoom.francoischalifour.com/image-2.ddbb59d5.jpg" >
-
-<img id="zoom-scrollOffset" src="https://medium-zoom.francoischalifour.com/image-2.ddbb59d5.jpg" >
-
-<img id="zoom-trigger" src="https://medium-zoom.francoischalifour.com/image-2.ddbb59d5.jpg" >
-
-<img id="zoom-detach" src="https://medium-zoom.francoischalifour.com/image-2.ddbb59d5.jpg" >
-
 ```javascript
 <script>
   window.$docsify = {

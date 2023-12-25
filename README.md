@@ -8,7 +8,7 @@
 
 # Zoom image
 
-<img id="zoom-default" src="https://medium-zoom.francoischalifour.com/image-2.ddbb59d5.jpg" data-zoom-src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Animhorse.gif" >
+<img id="zoom-default" src="https://medium-zoom.francoischalifour.com/image-2.ddbb59d5.jpg" data-zoom-src="./logo.png" >
 
 <img id="zoom-margin" src="https://medium-zoom.francoischalifour.com/image-2.ddbb59d5.jpg" >
 

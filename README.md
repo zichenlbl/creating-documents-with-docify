@@ -1,4 +1,20 @@
-离线版本，使用本地 js 文件和本地 cs 文件。
+# 使用说明
+
+1.离线版本，使用本地 js 文件和本地 cs 文件。
+
+2.下载离线版本
+
+访问 [https://github.com/zichenlbl/creating-documents-with-docsify/tree/feature/offline-version](https://github.com/zichenlbl/creating-documents-with-docsify/tree/feature/offline-version)，下载代码压缩包文件。
+
+![image-20240220103428246](README/image-20240220103428246.png)
+
+3.修改文件夹访问权限
+
+![image-20240220103322946](README/image-20240220103322946.png)
+
+4.IIS 部署网站并访问
+
+![image-20240220103809012](README/image-20240220103809012.png)
 
 # 示例
 

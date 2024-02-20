@@ -1,3 +1,5 @@
+离线版本，使用本地 js 文件和本地 cs 文件。
+
 # 示例
 
 > An awesome project.

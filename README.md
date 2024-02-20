@@ -1,3 +1,13 @@
+# 使用说明
+
+1.在线版本：[main](https://github.com/zichenlbl/creating-documents-with-docsify/tree/main) 分支，示例：[https://zichenlbl.github.io/creating-documents-with-docsify/](https://zichenlbl.github.io/creating-documents-with-docsify/)。
+
+2.离线版本：[feature/offline-version](https://github.com/zichenlbl/creating-documents-with-docsify/tree/feature/offline-version) 分支。
+
+3.在线版本需要网络访问 cdn 链接，才可以访问文档。
+
+4.本地或局域网访问文档，下载离线版本，就可以访问文档。
+
 # 示例
 
 > An awesome project.

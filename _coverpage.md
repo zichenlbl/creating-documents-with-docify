@@ -9,4 +9,4 @@
 - Multiple themes
 
 [Docsify](https://github.com/docsifyjs/docsify/)
-[示例](/creating-documents-with-docify/#示例)
+[示例](/creating-documents-with-docsify/#示例)

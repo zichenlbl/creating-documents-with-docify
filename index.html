@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="icon" href="/creating-documents-with-docsify/favicon.ico">
   <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"> -->
 
   <!-- 界面主题 css 样式切换 -->
@@ -34,7 +33,7 @@
       name: 'Docsify文档创建',
 
       // 右上角 Github 挂件。link：https://docsify.js.org/#/zh-cn/configuration?id=repo
-      repo: 'https://github.com/zichenlbl/creating-documents-with-docsify',
+      // repo: 'https://github.com/docsifyjs/docsify/',
 
       // 每个页面的侧边栏都加载自定义的 _sidebar.md 文件生成侧边栏。link：https://docsify.js.org/#/zh-cn/configuration?id=loadsidebar
       loadSidebar: true,
@@ -47,12 +46,12 @@
       
       // 启用封面页。link：https://docsify.js.org/#/zh-cn/configuration?id=coverpage
       coverpage: {
-        '/creating-documents-with-docsify/': '_coverpage.md'
+        '/': '_coverpage.md',
       },
 
       // 点击文档标题后跳转的链接地址。link：https://docsify.js.org/#/zh-cn/configuration?id=namelink
       nameLink: {
-        '/': '/creating-documents-with-docsify/',
+        '/': '/',
       },
 
       // 路由模式，首页地址栏后面不会出现/#/。link：https://docsify.js.org/#/zh-cn/configuration?id=routermode
@@ -120,7 +119,8 @@
           'https://raw.githubusercontent.com/zichenlbl/zichenlbl/main/README.md',
 
         // 为所有的子页面重用根目录下的 _sidebar.md 侧边栏配置文件。
-        '/.*/_sidebar.md': '/creating-documents-with-docsify/_sidebar.md',
+        '/.*/_sidebar.md': '/_sidebar.md',
+        
       },
       
       // 复制到剪切板，匹配路由后显示中文或英文按钮文字、错误提示、成功提示。link：https://docsify.js.org/#/zh-cn/plugins?id=%e5%a4%8d%e5%88%b6%e5%88%b0%e5%89%aa%e8%b4%b4%e6%9d%bf
@@ -222,7 +222,7 @@
       },
 
       // disqus 评论，用户 id。link：https://disqus.com/
-      disqus: 'zichenlbl',
+      // disqus: 'zichenlbl',
 
       // 支持使用 Vue 语法。link：https://docsify.js.org/#/zh-cn/vue?id=%e5%85%bc%e5%ae%b9-vue
       vueGlobalOptions: {
@@ -236,71 +236,78 @@
       // 插件
       plugins: [
 
-        // 在 Github 上修改此页。link：https://github.com/njleonzhang/docsify-edit-on-github
-        EditOnGithubPlugin.create(
+        // // 在 Github 上修改此页。link：https://github.com/njleonzhang/docsify-edit-on-github
+        // EditOnGithubPlugin.create(
 
-          // github 项目文件夹：https://github.com/docsifyjs/docsify/blob/master/docs/
-          'https://github.com/zichenlbl/creating-documents-with-docsify/blob/main/',
+        //   // github 项目文件夹：https://github.com/docsifyjs/docsify/blob/master/docs/
+        //   'https://github.com/docsifyjs/docsify/blob/master/docs',
 
-          // 编辑你的github页面的链接：默认情况下，这是根据自动设置的docBase
-          null,
+        //   // 编辑你的github页面的链接：默认情况下，这是根据自动设置的docBase
+        //   'https://github.com/docsifyjs/docsify/blob/master/docs',
 
-          // 编辑按钮的文字：默认值：Edit on github。如果作为函数传递，则可以根据文件路径自定义标题。
-          function(file) {
-            if (file.indexOf('/en') === -1) {
-              return '在 Github 上编辑此页'
-            } else {
-              return 'edit on git'
-            }
-          }
-        )
+        //   // 编辑按钮的文字：默认值：Edit on github。如果作为函数传递，则可以根据文件路径自定义标题。
+        //   function(file) {
+        //     if (file.indexOf('en') === -1) {
+        //       return '在 Github 上编辑此页'
+        //     } else {
+        //       return 'edit on git'
+        //     }
+        //   }
+        // )
+
       ],
 
     }
   </script>
 
   <!-- Docsify v4 --> 
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="./js/docsify@4.js"></script>
 
   <!-- 全文搜索 - Search link：https://docsify.js.org/#/zh-cn/plugins?id=%e5%85%a8%e6%96%87%e6%90%9c%e7%b4%a2-search -->
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="./js/search.min.js"></script>
 
   <!-- 全文搜索时忽略双音符 link：https://docsify.js.org/#/zh-cn/plugins?id=%e5%85%a8%e6%96%87%e6%90%9c%e7%b4%a2-search -->
-  <script src="//polyfill.io/v3/polyfill.min.js?features=String.prototype.normalize"></script>
+  <script src="./js/polyfill.min.js"></script>
 
   <!-- emoji 表情插件 link：https://docsify.js.org/#/zh-cn/plugins?id=emoji -->
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+  <script src="./js/emoji.min.js"></script>
 
   <!-- 外链脚本 - External Script 用于执行 src 引用的js link：https://docsify.js.org/#/zh-cn/plugins?id=%e5%a4%96%e9%93%be%e8%84%9a%e6%9c%ac-external-script -->
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
+  <script src="./js/external-script.min.js"></script>
 
   <!-- 图片缩放 - Zoom image link：https://docsify.js.org/#/zh-cn/plugins?id=%e5%9b%be%e7%89%87%e7%bc%a9%e6%94%be-zoom-image -->
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="./js/zoom-image.min.js"></script>
 
   <!-- 复制到剪切板 link：https://docsify.js.org/#/zh-cn/plugins?id=%e5%a4%8d%e5%88%b6%e5%88%b0%e5%89%aa%e8%b4%b4%e6%9d%bf -->
-  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <script src="./js/docsify-copy-code.min.js"></script>
   
   <!-- 字数统计 link：https://docsify.js.org/#/zh-cn/plugins?id=%e5%ad%97%e6%95%b0%e7%bb%9f%e8%ae%a1 -->
-  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+  <script src="./js/countable.js"></script>
 
   <!-- 代码高亮 link：https://docsify.js.org/#/zh-cn/language-highlight?id=%e4%bb%a3%e7%a0%81%e9%ab%98%e4%ba%ae -->
   <!-- bash 语言代码高亮 -->
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="./js/prism-bash.min.js"></script>
   
   <!-- php 语言代码高亮 -->
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
+  <script src="./js/prism-php.min.js"></script>
+
+  <!-- csharp 语言代码高亮 -->
+  <script src="./js/prism-csharp.min.js"></script>
+
+  <!-- java 语言代码高亮 -->
+  <script src="./js/prism-java.min.js"></script>
 
   <!-- Tabs 选项卡 link：https://docsify.js.org/#/zh-cn/plugins?id=tabs https://jhildenbiddle.github.io/docsify-tabs/#/ -->
-  <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+  <script src="./js/docsify-tabs@1.js"></script>
 
   <!-- 底部分页导航 link：https://docsify.js.org/#/zh-cn/plugins?id=pagination -->
-  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="./js/docsify-pagination.min.js"></script>
 
   <!-- disqus 评论 link：https://disqus.com/ -->
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/disqus.min.js"></script>
+  <!-- <script src="./js/disqus.min.js"></script> -->
 
-  <!-- 支持使用 Vue 语法，Vue3 开发版 link：https://docsify.js.org/#/zh-cn/vue?id=%e5%85%bc%e5%ae%b9-vue -->
-  <script src="//cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
+  <!-- 支持使用 Vue 语法，Vue3 生产版 link：https://docsify.js.org/#/zh-cn/vue?id=%e5%85%bc%e5%ae%b9-vue -->
+  <script src="./js/vue.global.prod.js"></script>
 
   <!-- 离线模式（PWA）link：https://docsify.js.org/#/zh-cn/pwa -->
   <script>

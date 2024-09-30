@@ -1,6 +1,6 @@
 # 使用说明
 
-1.在线版本：[main](https://github.com/zicl1/creating-documents-with-docsify/tree/main) 分支，示例：[https://zicl1.github.io/creating-documents-with-docsify/](https://zichenlbl.github.io/creating-documents-with-docsify/)。
+1.在线版本：[main](https://github.com/zicl1/creating-documents-with-docsify/tree/main) 分支，示例：[https://zicl1.github.io/creating-documents-with-docsify/](https://zicl1.github.io/creating-documents-with-docsify/)。
 
 2.离线版本：[feature/offline-version](https://github.com/zicl1/creating-documents-with-docsify/tree/feature/offline-version) 分支。
 

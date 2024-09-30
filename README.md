@@ -4,7 +4,7 @@
 
 2.下载离线版本
 
-访问 [https://github.com/zichenlbl/creating-documents-with-docsify/tree/feature/offline-version](https://github.com/zichenlbl/creating-documents-with-docsify/tree/feature/offline-version)，下载代码压缩包文件。
+访问 [https://github.com/zicl1/creating-documents-with-docsify/tree/feature/offline-version](https://github.com/zicl1/creating-documents-with-docsify/tree/feature/offline-version)，下载代码压缩包文件。
 
 ![image-20240220103428246](README/image-20240220103428246.png)
 
